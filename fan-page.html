@@ -13,7 +13,7 @@
 
 <div class="navbar-fixed">  <!-- nav start -->
 	<nav class="light-blue accent-2">
-		<div class="nav-wrapper container">
+		<div class="nav-wrapper container hide-on-med-and-down">
 	      <a href="#head" id="logo" class="brand-logo animated infinite pulse">Big Hero 6</a>
 	      <ul id="nav-mobile" class="right hide-on-med-and-down">
 	        <li id="button1" class="animated fadeInDown"><a href="#introduction" class="waves-effect waves-light btn">Introduction</a></li>
@@ -22,8 +22,21 @@
 	        <li id="button4" class="animated fadeInDown"><a href="#soundtrack" class="waves-effect waves-light btn">Soundtrack</a></li>
 	      </ul>
 	    </div>
+
+      <div id="side-nav">
+        <a href="#head" id="logo" class="brand-logo animated infinite pulse hide-on-large-only">Big Hero 6</a>
+        <ul id="slide-out" class="side-nav">
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#characters">Characters</a></li>
+          <li><a href="#conflict">Conflict</a></li>
+          <li><a href="#soundtrack">Soundtrack</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      </div>
 	</nav> 
-</div> <!-- nav end -->
+</div> 
+
+<!-- nav end -->
 
 <div> <!-- introduction start -->
 
@@ -72,14 +85,20 @@
         <img src="img/friends-crop.png"> <!-- Friends -->
         <div class="caption center-align">
           <h3 class="black-text">Hiro's Friends</h3>
-          <h3 class="black-text">A refreshing variety of characters that go from ordinary students to superheroes.</h3>
+          <!-- for device sizes medium and up -->
+          <h3 class="white-text hide-on-small-only">A refreshing variety of characters that go from ordinary students to superheroes.</h3>
+          <!-- for small device sizes -->
+          <h4 class="white-text hide-on-med-and-up">A refreshing variety of characters that go from ordinary students to superheroes.</h4>
         </div>
       </li>
       <li>
         <img src="img/yokai.png"> <!-- Callaghan -->
         <div class="caption center-align">
           <h3>Professor Callaghan</h3>
-          <h3 class="light grey-text text-lighten-3">The unexpected villian of the movie whose struggles with grief rival Hiro's.</h3>
+          <!-- for device sizes medium and up -->
+          <h3 class="light grey-text text-lighten-3 hide-on-small-only">The unexpected villian of the movie whose struggles with grief rival Hiro's.</h3>
+          <!-- for small device sizes -->
+          <h4 class="light grey-text text-lighten-3 hide-on-med-and-up">The unexpected villian of the movie whose struggles with grief rival Hiro's.</h4>
         </div>
       </li>
     </ul>
